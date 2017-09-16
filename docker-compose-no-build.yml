@@ -5,7 +5,7 @@ services:
     volumes:
       - ./code/data/db:/data/db
   front:
-    build: docker-front
+    image: communecter/co2-front-dev:latest
     ports:
       - "5080:80"
       - "5443:443"
